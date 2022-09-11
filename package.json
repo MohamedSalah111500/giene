@@ -1,0 +1,83 @@
+{
+  "name": "genie",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/auth": "^4.5.8",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@material-ui/core": "^4.9.14",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.92",
+    "@mui/material": "^5.9.2",
+    "@mui/styles": "^5.8.4",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
+    "env-cmd": "10.1.0",
+    "moment": "^2.29.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-addons-update": "^15.6.3",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-html-parser": "^2.0.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-selecto": "^1.17.0",
+    "react-table-drag-select": "^0.3.1",
+    "react-toastify": "^9.0.5",
+    "redux": "^4.2.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.52.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:local": "env-cmd -f .env.local npm run start",
+    "start:develop": "env-cmd -f .env.develop npm run start",
+    "start:localdev": "env-cmd -f .env.localdev npm run start",
+    "start:localmock": "env-cmd -f .env.localmock run-p start localApi",
+    "start:test": "env-cmd -f .env.test npm run start",
+    "start:stage": "env-cmd -f .env.stage npm run start",
+    "start:production": "env-cmd -f .env.production npm run start",
+    "localApi": "json-server --watch tools/db.json --port 3001 --routes tools/routes.json",
+    "build:localdev": "node ./build env=localdev",
+    "build:develop": "node ./build env=develop",
+    "build:test": "node ./build env=test",
+    "build:stage": "node ./build env=stage",
+    "build:production": "node ./build env=production",
+    "lint:check": "eslint . --ext=js,jsx",
+    "lint:fix": "eslint . --ext=js,jsx --fix",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-immutable-state-invariant": "^2.1.0",
+    "sass": "^1.52.3"
+  }
+}

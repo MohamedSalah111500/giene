@@ -1,0 +1,30 @@
+@import "../../scss/abstracts/colors";
+
+.name {
+  color: $main-primary;
+  background: $light-secondary;
+}
+
+.AppBar {
+  background-color: #fff !important;
+  color: $main-primary;
+  height: 73px;
+  border: 2px solid $lightGrey-grey;
+
+  box-shadow: none !important;
+  h2 {
+    color: $black;
+    margin: 0;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+.identityWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toolBar {
+  justify-content: space-between;
+}
+

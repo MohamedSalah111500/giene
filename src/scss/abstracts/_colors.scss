@@ -1,0 +1,38 @@
+// -- primary --
+$main-primary: #009DBA;
+$main-light: #009dba;
+$mediumPrimary-light: #daf0f6;
+
+// -- secondary --
+$main-secondary: #71840a;
+$light-secondary: #b0c313;
+$darkOrange-secondary: #009dba;
+$darkOrange-secondary: #ee7100;
+$lightOrange-secondary: #f9b200;
+$pink-secondary: #ff7976;
+$green-secondary: #29bc4f;
+$blue-secondary: #2571b3;
+$red-secondary: #ed2e2e;
+
+// -- grey --
+$darkGrey-grey: #203442;
+$mediumGrey-grey: #536876;
+$mediumGrey1-grey: #354052;
+$mediumGrey2-grey: #696F88;
+$lightGrey-grey: #f1f1f1;
+$lightGrey1-grey: #edf0f5;
+$lightGrey2-grey: #d3dae3;
+$lightGrey3-grey: #e2e7ee;
+$lightGrey4-grey: #919ea7;
+$lightGrey5-grey: #bbc5d5;
+$lightGrey6-grey: #eeeeee;
+$lightGrey7-grey: #8d99ae;
+$lightGrey8-grey: #bdbdbd;
+$semiGrey-grey: #00000029;
+
+$white: #fff;
+$black: rgb(0, 0, 0);
+
+:export {
+  mainPrimary: $main-primary;
+}

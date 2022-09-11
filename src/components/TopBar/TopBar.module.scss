@@ -1,0 +1,23 @@
+@import "../../scss/abstracts/colors";
+
+.TopBarWrapper {
+  background-color: $lightGrey1-grey;
+  height: 60px;
+  border-bottom: 1px solid $lightGrey2-grey;
+  display: flex;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .DropDownWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+  }
+  .DropDownStyle{
+    width: 240px;
+  }
+}

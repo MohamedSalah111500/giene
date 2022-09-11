@@ -1,0 +1,32 @@
+@import "../../scss/abstracts/colors";
+
+.compWrapper {
+  min-height: 500px;
+  .AddressWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .DeviceName,
+    .BoxPosition {
+      color: $darkGrey-grey;
+      font-weight: bold;
+      font-size: 18px;
+      span {
+        font-size: 14px;
+        color: $lightGrey7-grey;
+        font-weight: normal;
+        margin-left: 15px;
+      }
+    }
+
+    .ActionWrapper {
+      .BoxButtons {
+        width: auto;
+      }
+    }
+  }
+}
+
+.RackDropDown {
+  width: 108px;
+}

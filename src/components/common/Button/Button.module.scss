@@ -1,0 +1,40 @@
+@import "../../../scss/abstracts/colors";
+
+.common {
+  text-transform: capitalize !important;
+  font-size: 0.875rem !important;
+  color: $white;
+}
+
+.actionSecondaryFormBtn {
+  &:global {
+    box-shadow: none !important ;
+    border: 1px solid $lightGrey2-grey !important ;
+    height: 40px;
+    width: 108px;
+    padding: 12px !important ;
+    background-color: white !important ;
+    color: $darkGrey-grey !important ;
+    margin-right: 10px !important ;
+    &:hover {
+      background-color: white !important ;
+    }
+    &[disabled] {
+      color: $lightGrey2-grey !important ;
+      cursor: not-allowed !important ;
+    }
+  }
+}
+
+.actionListingBtn {
+  width: 200px;
+  height: 44px;
+  padding: 0 !important  ;
+  margin-left: 10px !important ;
+}
+.actionFormBtn {
+  width: 200px;
+  height: 40px;
+  padding: 0 !important  ;
+  margin-left: 10px !important ;
+}

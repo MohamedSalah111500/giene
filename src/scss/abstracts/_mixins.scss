@@ -1,0 +1,28 @@
+
+
+// border-radius mixin
+/*
+  ex : @include bRadius(1rem);
+*/
+@mixin bRadius($r) {
+  border-radius: $r;
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  -o-border-radius: $r;
+}
+
+
+@mixin bp-max-width() {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+
+
+// box shadows
+@mixin shadow(){
+  -webkit-box-shadow: 0 0 8px 2px $shadow-black;
+  -moz-box-shadow: 0 0 8px 2px $shadow-black;
+  box-shadow: 0 0 8px 2px $shadow-black;
+}

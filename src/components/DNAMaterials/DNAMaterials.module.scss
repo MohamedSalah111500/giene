@@ -1,0 +1,120 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/colors";
+
+.compWrapper {
+  min-height: 450px;
+  border-right: 1px solid $lightGrey2-grey;
+}
+.ShowWrapper {
+  & :global {
+    .MuiContainer-root {
+      display: flex;
+      align-items: center;
+    }
+  }
+  p {
+    margin-right: 10px;
+  }
+  .FilterSide,
+  .SortSide {
+    display: flex;
+    align-items: center;
+  }
+
+  .FilterSide {
+    .StrainDropDown,
+    .PeriodDropDown {
+      width: 180px;
+      margin-right: 5px;
+
+      @media screen and (min-width: $extraLargeScreens) {
+        width: 230px;
+      }
+      @media screen and (min-width: $doubleExtraLargeScreens) {
+        width: 260px;
+      }
+    }
+    .PeriodDropDown {
+      background-color: #ffffff;
+      border: 1px solid $lightGrey2-grey !important ;
+      color: $lightGrey4-grey;
+      padding-inline: 0;
+    }
+
+    & :global {
+      .MuiOutlinedInput-root,
+      .MuiFormControl-root {
+        background-color: $white;
+        height: 40px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        font-size: 14px;
+
+        .MuiOutlinedInput-input {
+          &::placeholder {
+            color: $mediumGrey-grey;
+            opacity: 0.7;
+          }
+        }
+      }
+      .MuiInputLabel-formControl {
+        top: -5px;
+        font-size: 14px;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid $lightGrey2-grey !important ;
+      }
+    }
+  }
+
+  .SortSide {
+    justify-content: flex-end;
+    width: 100%;
+    .sortDropDown {
+      width: 147px;
+    }
+  }
+}
+.ButtonsWrapper {
+  margin: 10px 0;
+}
+.PlacesButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PlacesButton {
+  margin: 7px !important;
+  width: 140px;
+  height: 40px;
+  @media screen and (min-width: $extraLargeScreens) {
+    width: 170px;
+  }
+}
+.SearchWrapper {
+  display: flex !important;
+  justify-content: flex-start  !important;
+  align-items: center  !important;
+  button {
+    margin-inline-start: 25px;
+  }
+}
+.Counter {
+  padding: 10px;
+  font-size: 16px;
+  color: #71840a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  span {
+    font-size: 22px;
+    color: #71840a;
+  }
+}
+.WarningMessage {
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+@import "../../../scss/abstracts/colors";
+
+.CellWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 100%;
+ 
+  span{
+    color: $lightGrey7-grey;
+    display: inline-block;
+  }
+}

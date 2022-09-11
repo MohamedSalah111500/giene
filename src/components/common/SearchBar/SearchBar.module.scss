@@ -1,0 +1,54 @@
+@import "../../../scss/abstracts/colors";
+.boxWrapper {
+  display: flex;
+  align-items: center;
+  .inputBlock {
+    width: 370px;
+    background-color: white;
+    height: 44px;
+    display: flex;
+    padding-inline-end: 12px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid $lightGrey3-grey;
+    border-radius: 5px;
+
+    .searchICON {
+      border-right: 1px solid;
+      border-right: 1px solid $lightGrey5-grey;
+      padding-right: 8px;
+      margin-left: 10px;
+      svg {
+        width: 15px;
+        color: #000;
+      }
+    }
+
+    input {
+      height: inherit;
+      outline: none;
+      border: 0;
+      padding: 0 10px;
+      background: #f0f8ff00;
+      color: $mediumGrey1-grey;
+      width: 100%;
+
+      &::placeholder {
+        color: $mediumGrey1-grey;
+        font-size: 14px;
+      }
+    }
+    .clearBtn {
+      background-color: $lightGrey4-grey;
+    }
+
+    &:focus-within {
+      width: 400px;
+    }
+  }
+  .errorMessage {
+    font-size: 12px;
+    color: $red-secondary;
+    padding-left: 20px;
+  }
+}

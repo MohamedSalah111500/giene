@@ -1,0 +1,10 @@
+@import "../../../scss/abstracts/colors";
+
+.RowWrapper {
+  border-bottom: 1px solid $lightGrey2-grey !important;
+  border-inline: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+}

@@ -1,0 +1,30 @@
+@import "../../../scss/abstracts/colors";
+
+.CustomTabsWrapper {
+  height: 40px;
+  & :global {
+    .MuiTabs-root {
+      border-radius: 4px;
+      border: 1px solid $lightGrey2-grey;
+      min-height: auto;
+      button {
+        height: 40px;
+        min-height: auto;
+        border-right: 1px solid $lightGrey2-grey;
+        padding-top: 0;
+        padding-bottom: 0;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      .MuiButtonBase-root{
+        text-transform: none;
+      }
+    }
+    .Mui-selected {
+      background-color: $main-primary !important;
+      color: $white !important;
+    }
+  }
+
+}

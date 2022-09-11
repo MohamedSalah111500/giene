@@ -1,0 +1,47 @@
+{
+  "materialTypes": [
+    {
+      "id": 1,
+      "name": "Agro glycerol",
+      "unplaced": "8000",
+      "deviceType": { "id": 1, "name": "Freezer" }
+    },
+    {
+      "id": 2,
+      "name": "DNA Agro glycerol",
+      "unplaced": "5000",
+
+      "deviceType": { "id": 2, "name": "Fridge" }
+    },
+    {
+      "id": 3,
+      "name": "DNA ",
+      "unplaced": "6000",
+
+      "deviceType": { "id": 3, "name": "Fridge" }
+    }
+  ],
+  "crops": [
+    {
+      "cropCode": 16,
+      "cropName": "Zea mays"
+    },
+    {
+      "cropCode": 17,
+      "cropName": "Glycine max"
+    },
+    {
+      "cropCode": 3,
+      "cropName": "Zea mays2"
+    },
+    {
+      "cropCode": 4,
+      "cropName": "Glycine max2"
+    },
+
+    {
+      "cropCode": 22,
+      "cropName": "Arabidopsis thaliana"
+    }
+  ]
+}
